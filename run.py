@@ -59,3 +59,12 @@ tab3.write("""
 """)
 
 st.divider()
+col1, col2, col3 = st.columns(3)
+r = col1.radio("그래서 뭘 신어볼까요?", ["나이키", "써코니", "푸마"])
+
+if r == "나이키":
+        st.write("발볼이 넓으면 신지마세요, 쳐다도 보지 마세요")
+elif r == "써코니":
+        st.write("디자인 상관없이 기능성만 보신다면 추천합니다")
+elif r == "푸마":
+        st.write("오래 신고 싶으면 아주 추천합니다")
